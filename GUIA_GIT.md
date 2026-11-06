@@ -8,7 +8,7 @@ Cada alumno trabaja en un repositorio individual privado. El canal común entreg
 2. En una terminal situada en tu carpeta de proyectos, clona la distribución. Cambia MiJuego por el nombre que quieras usar para la carpeta local.
 
 ```bash
-git clone https://github.com/Rohadgal/motores-1-alumnos.git MiJuego
+git clone https://github.com/devInClass/Motores-1-Alumnos.git MiJuego
 cd MiJuego
 git remote rename origin curso
 ```
@@ -21,7 +21,7 @@ git push -u origin main
 git remote -v
 ```
 
-Origin debe apuntar a tu repositorio individual y curso a Rohadgal/motores-1-alumnos. Abre en Unity Hub la carpeta ProyectoUnity dentro de tu clon.
+Origin debe apuntar a tu repositorio individual y curso a devInClass/Motores-1-Alumnos. Abre en Unity Hub la carpeta ProyectoUnity dentro de tu clon.
 
 ## Guardar una actividad
 
