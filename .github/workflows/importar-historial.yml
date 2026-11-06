@@ -1,0 +1,19 @@
+name: Importar historial del curso
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.migracion/**'
+      - '.github/workflows/importar-historial.yml'
+permissions:
+  contents: write
+jobs:
+  importar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          fetch-depth: 0
+      - name: Importar y verificar historial
+        run: python .migracion/importar.py
